@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="AgeEditCell" customModule="oruka_user_register" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年齢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kb5-4F-4tv">
+                        <rect key="frame" x="20" y="20" width="29" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="vr7-Oo-bwV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="textBlack54"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="未設定" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fMR-dh-4ti" customClass="PickerTextField" customModule="oruka_user_register" customModuleProvider="target">
+                        <rect key="frame" x="69" y="20" width="231" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="DCV-xj-XjN"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kb5-4F-4tv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="4u3-wG-9FI"/>
+                    <constraint firstItem="fMR-dh-4ti" firstAttribute="leading" secondItem="kb5-4F-4tv" secondAttribute="trailing" constant="20" id="680-tr-KuP"/>
+                    <constraint firstItem="kb5-4F-4tv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="NVy-K3-CTm"/>
+                    <constraint firstAttribute="bottom" secondItem="fMR-dh-4ti" secondAttribute="bottom" constant="20" id="fz7-jj-d63"/>
+                    <constraint firstAttribute="trailing" secondItem="fMR-dh-4ti" secondAttribute="trailing" constant="20" id="g0q-xf-Mli"/>
+                    <constraint firstItem="fMR-dh-4ti" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="mOV-aa-l5Q"/>
+                    <constraint firstItem="fMR-dh-4ti" firstAttribute="leading" secondItem="kb5-4F-4tv" secondAttribute="trailing" constant="20" id="tvJ-ZI-VMk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textField" destination="fMR-dh-4ti" id="qH6-zR-Bgg"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="158.70535714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="textBlack54">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.54000002145767212" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
